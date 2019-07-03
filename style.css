@@ -1,0 +1,35 @@
+body{
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar navbar'
+                        'header header header header'
+                        'section section section batata'
+                        'footer footer footer footer';
+    grid-template-rows: 10vh 500px 60vh 15vh;
+    grid-template-columns: 25vw 25vw 20vw 30vw;
+    margin: 0;
+}
+nav{
+    font-family: 'Marvel', sans-serif;
+    grid-area: navbar;
+    justify-content: space-between;
+    background-color:#5e2129;
+    height: 500px;
+}
+header{
+    background-color: blue;
+    background-image: url(https://lumiere-a.akamaihd.net/v1/images/eu_ts4_promo_woody_hero_r_62e7083d.jpeg?region=0,0,2000,835&width=1200);
+    background-size: cover;
+    grid-area: header;
+}
+section{
+    background-color: green;
+    grid-area: section;
+}
+aside{Z
+    background-color: orange;
+    grid-area: batata;
+}
+footer{
+    background-color: yellow;
+    grid-area: footer;
+}
